@@ -1,0 +1,146 @@
+*,
+*::before, 
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 15px;
+    color: var(--color-grey-text);
+    line-height: 1.6;
+    background-color: var(--color-background);
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+:root{
+    --color-background: hsl(185, 75%, 39%);
+    --color-blue-text: hsl(229, 23%, 23%);
+    --color-grey-text: hsl(227, 10%, 46%);
+}
+
+.big-bold{
+    font-weight: 700;
+    color: var(--color-blue-text);
+    font-size: 18px;
+}
+.age{
+    font-size: 18px;
+}
+.text-below-stat{
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.body-wrapper::before{
+    content: url('./images/bg-pattern-top.svg');
+    position: absolute;
+    top: -100%;
+    left: -188%;
+    z-index: -1;
+}
+
+.body-wrapper::after{
+    content: url('./images/bg-pattern-bottom.svg');
+    position: absolute;
+    bottom: -85%;
+    right: -208%;
+    z-index: -1;
+}
+
+
+.body-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    position: relative;
+    overflow: hidden;
+}
+.container{
+    background-color: white;
+    border-radius: 20px;
+    max-width: 320px;
+}
+.card-img{
+    border-radius: 20px 20px 0 0;
+}
+.profile{
+    padding: 75px 20px 25px 20px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile img{
+    border-radius: 50%;
+    border: 5px solid white;
+    position: absolute;
+    top: -48px;
+}
+.name-age{
+    display: flex;
+    align-items: center;
+}
+.name-age p:first-of-type{
+    margin-right: 10px;
+}
+.stats{
+    padding: 25px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid hsl(227deg 18% 92%);
+}
+.stat{
+    text-align: center;
+}
+
+
+
+@media screen and (min-width: 991px){
+
+    .container{
+        min-width: 400px;
+    }
+
+    .card-img{
+        width: 100%;
+    }
+
+    body{
+        font-size: 16px;
+    }
+
+    .big-bold{
+        font-size: 19px;
+    }
+    .age{
+        font-size: 19px;
+    }
+    .text-below-stat{
+        font-size: 11px;
+    }
+
+    .body-wrapper::before {
+        top: -60%;
+        left: -20%;
+    }
+
+    .body-wrapper::after {
+        bottom: -70%;
+        right: -20%;
+    }
+
+
+}
+
+
