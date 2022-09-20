@@ -8,7 +8,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://jonkohjj.github.io/profile-card-component/](https://jonkohjj.github.io/profile-card-component/)
 
 ### Built with
 
